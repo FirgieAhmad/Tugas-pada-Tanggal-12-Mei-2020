@@ -1,0 +1,26 @@
+#include <iostream>
+// Nama : Firgie Ahmad --- NIM : ETE10190123
+// Tugas Dirumah Pada Tanggal 6 Mei 2020 --- Membuat pemrograman c++ dengan tampilan Piramid
+
+using namespace std;
+
+int main()
+{
+	int n;
+	
+	cout << " Masukan Jumlah Panjang Pola : ";
+	cin >> n;
+	
+	cout << "Pola\n";
+	
+	for( int i = 1; i <= n; i++){
+		for( int j = n; j > i; j--){
+			cout << " ";
+		}
+		for( int k = 1; k <= (2*i - 1); k++){
+			cout << "*";
+		}
+		cout << endl ;
+	}
+
+}
